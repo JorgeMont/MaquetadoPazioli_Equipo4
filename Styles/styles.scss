@@ -70,13 +70,12 @@ footer {
       margin-bottom: 16px;
     }
 
-    ul{
-        list-style: none;
+    ul {
+      list-style: none;
 
-        li{
-            margin-bottom: 8px;
-        }
-        
+      li {
+        margin-bottom: 8px;
+      }
     }
   }
 
@@ -87,8 +86,8 @@ footer {
       font-size: 14px;
       margin-bottom: 16px;
     }
-    p{
-        width: 50%;
+    p {
+      width: 50%;
     }
   }
 
@@ -100,32 +99,79 @@ footer {
     }
   }
 
-  .footer__copyright{
+  .footer__copyright {
     width: 70%;
   }
 
-  .footer__credits{
+  .footer__credits {
     font-size: 14px;
     width: 100%;
     text-align: center;
 
-    span{
-        color: rgb(160, 28, 28);
+    span {
+      color: rgb(160, 28, 28);
     }
 
-    .autor{
-        font-weight: 800;
+    .autor {
+      font-weight: 800;
     }
   }
 }
 
 @media (max-width: 600px) {
-    footer{
-        display: flex;
-        flex-direction: column;
+  footer {
+    background: linear-gradient(
+      177.96deg,
+      rgba(255, 255, 255, 0.43) 1.72%,
+      #6f6f6f 107.44%
+    );
+    padding: 56px 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    height: 803px;
+    font-size: 12px;
 
-        .footer__logoPazioli{
-            width: 80%;
-        }
+    .footer__logoPazioli {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      order: -1;
+
+      img {
+        margin: 50px 0;
+        width: 200px;
+      }
     }
+
+    .footer__nosotros {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .footer__contactanos {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 20px;
+
+      p {
+        width: 100%;
+      }
+    }
+
+    .footer__redes {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+      order: -1;
+    }
+
+    .footer__copyright {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
 }

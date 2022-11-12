@@ -90,10 +90,47 @@ footer .footer__credits .autor {
 
 @media (max-width: 600px) {
   footer {
+    background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6f6f6f 107.44%);
+    padding: 56px 50px 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 0;
+    height: 803px;
+    font-size: 12px;
   }
   footer .footer__logoPazioli {
     width: 80%;
+    display: flex;
+    justify-content: center;
+    order: -1;
+  }
+  footer .footer__logoPazioli img {
+    margin: 50px 0;
+    width: 200px;
+  }
+  footer .footer__nosotros {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  footer .footer__contactanos {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  footer .footer__contactanos p {
+    width: 100%;
+  }
+  footer .footer__redes {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    order: -1;
+  }
+  footer .footer__copyright {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */
