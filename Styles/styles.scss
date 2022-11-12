@@ -6,7 +6,10 @@ $negroHover: rgba(0,0,0,0.7);
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
 
-
+@mixin tamaño($with, $height){
+    width: $with;
+    height: $height;
+}
 //Extend
 %boton{
     background-color: $negroPazioli;
@@ -44,7 +47,96 @@ body{
 }
 
 @media only screen and (min-width: 1080px) {
+    body{
 
+        main{
+            .modelos-nuevos{
+                @include tamaño(100%,700px);
+                
+                margin-top: 926px;
+                background-image: url("../assets/image\ 2.png");
+                background-size: cover;
+                .gradiente{
+                    @include tamaño(100%,100%);    
+                    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%, rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
+                    .titulo{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        h1{
+                            @include tamaño(30%,100%);
+                            margin-top: 5vh;
+                            text-align: center; 
+                            font-family: Abril Fatface;
+                            font-size: 30px;
+                        }
+                    }
+                    .container-flex{
+                        h2{
+                            font-family: Abril Fatface;
+                        }
+                        display: flex;
+                        margin-top: 2%;
+                        @include tamaño(100%,70%);
+                        
+                        .texto{
+                           
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            color:$blancoPazioli; 
+                            @include tamaño(30%,80%);
+                            margin-left: 5%;
+                            margin-top: 10%;
+                           
+                            .valoraciones{
+                                @include tamaño(60%,2% );
+                                display: flex;
+                                justify-content: space-between
+                            }
+                            .categorias{
+                                @include tamaño(70%,2% );
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            .boton{
+                                @include tamaño(70%,8% );
+                                
+                            }
+                        }
+                        .contenedor-imagen{
+                            @include tamaño(50%,100%);
+                            margin-top: 5%;
+                            margin-left: 5%;
+                           
+                            background-image: url(../assets/Vector\(1\).png);
+                            background-size: 100% 100%;
+                            padding: 1px;
+                            scale: .8;
+                            
+                            
+                            .contenedor-imagen2{
+                                @include tamaño(100%,100%);
+                                
+                                background-image: url(../assets/Vector.png);
+                            background-size: 100% 100%;
+                            
+                            .imagen-sofa{
+                                @include tamaño(100%,100%);
+                                
+                                background-image: url(../assets/pixlr-bg-result\ \(6\)\ 2.png);
+                                background-size: 100% 100%;
+                            }
+                            }
+                            
+                        }
+
+                    }
+                }
+                
+            }
+        }
+    }
     
   }
   @media only screen and (max-width: 600px) {
