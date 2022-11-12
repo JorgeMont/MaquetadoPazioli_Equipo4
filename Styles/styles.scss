@@ -53,7 +53,7 @@ body{
             .modelos-nuevos{
                 @include tamaño(100%,700px);
                 
-                margin-top: 926px;
+                
                 background-image: url("../assets/image\ 2.png");
                 background-size: cover;
                 .gradiente{
@@ -134,6 +134,123 @@ body{
                     }
                 }
                 
+            }
+            .ecomerce{
+                
+                margin-top: 5%;
+                @include tamaño(100%, 600px);
+                background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%);
+                
+                .titulo{
+                    @include tamaño(100%, 10%);
+                   
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                   
+                    
+                    h1{
+                        
+                        @include tamaño(40%, 100%);
+                        font-size:30px;                        
+                        text-align: center;
+                    }
+                }
+
+                .row{
+                    @include tamaño(100%, 30%);
+                    margin-top: 4%;
+                    display: flex;
+                    justify-content: space-around;
+                    .card{
+                        margin-top: 10%;
+                        @include tamaño(20%, 100%);
+                        padding: 2%;
+                        
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        background: #FFFFFF;
+
+/* shadow-cards */
+box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+border-radius: 8px;
+                        .imagen{
+                            @include tamaño(30%, 40%);
+                            
+                            position: absolute;
+                            img{
+                                position: relative;
+                                left: 5%;
+                                
+                                
+                                
+                            }
+                        }
+                        .texto{
+                            @include tamaño(100%, 50%);
+                            margin-top: 40%;
+                            h2{
+                                margin-top: 2%;
+                            }
+                            .categorias{
+                                @include tamaño(100%, 20%);
+                                margin-top: 2%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+                            .compra{
+                                    @include tamaño(100%,30% );
+                                    margin-top: 5%;
+                                    display: flex;
+                                    padding: 2%;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    
+                                
+                                
+                                    
+                                    a{
+                                        
+                                        text-decoration: none;
+                                        padding: 2%;
+                                        text-align: center;
+                                        
+                                    @include tamaño(70%,100%);
+                                        border: 1px black solid;
+                                      border-radius: 1vh; 
+                               }
+                                
+                                .carrito{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    @include tamaño(20%,120%);
+                                    background-color: #000000;
+                                    border-radius: 1vh;
+
+                                }
+                            }
+                        }
+                    }
+                }
+               .ver-mas{
+                @include tamaño(15%,5% );
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 1vh;
+                background-color: #000000;
+                margin-left: 45%;
+                margin-top: 20%;
+
+                a{
+                    text-decoration: none;
+                    color: #F5F5F5;
+                }
+               } 
+              
             }
         }
     }
