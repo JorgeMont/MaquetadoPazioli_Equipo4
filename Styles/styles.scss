@@ -1,0 +1,44 @@
+//Variables
+$negroPazioli: #000000;
+$blancoPazioli: #FFFFFF;
+$amarilloPazioli: #FFBA60;
+$negroHover: rgba(0,0,0,0.7);
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+
+
+//Extend
+%boton{
+    background-color: $negroPazioli;
+    border-radius: 8px;
+    color: $blancoPazioli;
+    width: 100px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%botonHover{
+    @extend %boton;
+    background-color: $negroHover;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Raleway';
+}
+
+.boton{
+    @extend %boton;
+
+    &:hover{
+        @extend %botonHover;
+        cursor: pointer;
+    }
+}
