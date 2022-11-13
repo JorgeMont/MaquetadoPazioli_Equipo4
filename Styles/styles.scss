@@ -2,16 +2,17 @@
 $negroPazioli: #000000;
 $blancoPazioli: #FFFFFF;
 $amarilloPazioli: #FFBA60;
-$negroHover: rgba(0,0,0,0.7);
+$negroHover: rgba(0, 0, 0, 0.7);
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
 
-@mixin tamaño($with, $height){
+@mixin tamaño($with, $height) {
     width: $with;
     height: $height;
 }
+
 //Extend
-%boton{
+%boton {
     background-color: $negroPazioli;
     border-radius: 8px;
     color: $blancoPazioli;
@@ -22,211 +23,227 @@ $negroHover: rgba(0,0,0,0.7);
     justify-content: center;
 }
 
-%botonHover{
+%botonHover {
     @extend %boton;
     background-color: $negroHover;
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Raleway';
 }
 
-.boton{
+.boton {
     @extend %boton;
 
-    &:hover{
+    &:hover {
         @extend %botonHover;
         cursor: pointer;
     }
 }
 
 @media only screen and (min-width: 1080px) {
-    body{
+    body {
 
-        main{
-            .modelos-nuevos{
-                @include tamaño(100%,700px);
-                
-                
+        main {
+            .modelos-nuevos {
+                @include tamaño(100%, 700px);
+
+
                 background-image: url("../assets/image\ 2.png");
                 background-size: cover;
-                .gradiente{
-                    @include tamaño(100%,100%);    
+
+                .gradiente {
+                    @include tamaño(100%, 100%);
                     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.820101) 14.06%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 55.32%, rgba(255, 255, 255, 0.6454) 88.52%, #FFFFFF 97.7%);
-                    .titulo{
+
+                    .titulo {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        h1{
-                            @include tamaño(30%,100%);
+
+                        h1 {
+                            @include tamaño(30%, 100%);
                             margin-top: 5vh;
-                            text-align: center; 
+                            text-align: center;
                             font-family: Abril Fatface;
                             font-size: 30px;
                         }
                     }
-                    .container-flex{
-                        h2{
+
+                    .container-flex {
+                        h2 {
                             font-family: Abril Fatface;
                         }
+
                         display: flex;
                         margin-top: 2%;
-                        @include tamaño(100%,70%);
-                        
-                        .texto{
-                           
+                        @include tamaño(100%, 70%);
+
+                        .texto {
+
                             display: flex;
                             flex-direction: column;
                             justify-content: space-around;
-                            color:$blancoPazioli; 
-                            @include tamaño(30%,80%);
+                            color: $blancoPazioli;
+                            @include tamaño(30%, 80%);
                             margin-left: 5%;
                             margin-top: 10%;
-                           
-                            .valoraciones{
-                                @include tamaño(60%,2% );
+
+                            .valoraciones {
+                                @include tamaño(60%, 2%);
                                 display: flex;
                                 justify-content: space-between
                             }
-                            .categorias{
-                                @include tamaño(70%,2% );
+
+                            .categorias {
+                                @include tamaño(70%, 2%);
                                 display: flex;
                                 justify-content: space-between;
                             }
-                            .boton{
-                                @include tamaño(70%,8% );
-                                
+
+                            .boton {
+                                @include tamaño(70%, 8%);
+
                             }
                         }
-                        .contenedor-imagen{
-                            @include tamaño(50%,100%);
+
+                        .contenedor-imagen {
+                            @include tamaño(50%, 100%);
                             margin-top: 5%;
                             margin-left: 5%;
-                           
+
                             background-image: url(../assets/Vector\(1\).png);
                             background-size: 100% 100%;
                             padding: 1px;
                             scale: .8;
-                            
-                            
-                            .contenedor-imagen2{
-                                @include tamaño(100%,100%);
-                                
+
+
+                            .contenedor-imagen2 {
+                                @include tamaño(100%, 100%);
+
                                 background-image: url(../assets/Vector.png);
-                            background-size: 100% 100%;
-                            
-                            .imagen-sofa{
-                                @include tamaño(100%,100%);
-                                
-                                background-image: url(../assets/pixlr-bg-result\ \(6\)\ 2.png);
                                 background-size: 100% 100%;
+
+                                .imagen-sofa {
+                                    @include tamaño(100%, 100%);
+
+                                    background-image: url(../assets/pixlr-bg-result\ \(6\)\ 2.png);
+                                    background-size: 100% 100%;
+                                }
                             }
-                            }
-                            
+
                         }
 
                     }
                 }
-                
+
             }
-            .ecomerce{
-                
+
+            .ecomerce {
+
                 margin-top: 5%;
                 @include tamaño(100%, 600px);
                 background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%);
-                
-                .titulo{
+
+                .titulo {
                     @include tamaño(100%, 10%);
-                   
+
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                   
-                    
-                    h1{
-                        
+
+
+                    h1 {
+
                         @include tamaño(40%, 100%);
-                        font-size:30px;                        
+                        font-size: 30px;
                         text-align: center;
                     }
                 }
 
-                .row{
+                .row {
                     @include tamaño(100%, 30%);
                     margin-top: 4%;
                     display: flex;
                     justify-content: space-around;
-                    .card{
+
+                    .card {
                         margin-top: 10%;
                         @include tamaño(20%, 100%);
                         padding: 2%;
-                        
+
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         background: #FFFFFF;
 
-/* shadow-cards */
-box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
-border-radius: 8px;
-                        .imagen{
+                        /* shadow-cards */
+                        box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+                        border-radius: 8px;
+
+                        .imagen {
                             @include tamaño(30%, 40%);
-                            
+
                             position: absolute;
-                            img{
+
+                            img {
                                 position: relative;
                                 left: 5%;
-                                
-                                
-                                
+
+
+
                             }
                         }
-                        .texto{
+
+                        .texto {
                             @include tamaño(100%, 50%);
                             margin-top: 40%;
-                            h2{
+
+                            h2 {
                                 margin-top: 2%;
                             }
-                            .categorias{
+
+                            .categorias {
                                 @include tamaño(100%, 20%);
                                 margin-top: 2%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
                             }
-                            .compra{
-                                    @include tamaño(100%,30% );
-                                    margin-top: 5%;
-                                    display: flex;
+
+                            .compra {
+                                @include tamaño(100%, 30%);
+                                margin-top: 5%;
+                                display: flex;
+                                padding: 2%;
+                                justify-content: space-between;
+                                align-items: center;
+
+
+
+
+                                a {
+
+                                    text-decoration: none;
                                     padding: 2%;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    
-                                
-                                
-                                    
-                                    a{
-                                        
-                                        text-decoration: none;
-                                        padding: 2%;
-                                        text-align: center;
-                                        
-                                    @include tamaño(70%,100%);
-                                        border: 1px black solid;
-                                      border-radius: 1vh; 
-                               }
-                                
-                                .carrito{
+                                    text-align: center;
+
+                                    @include tamaño(70%, 100%);
+                                    border: 1px black solid;
+                                    border-radius: 1vh;
+                                }
+
+                                .carrito {
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
-                                    @include tamaño(20%,120%);
+                                    @include tamaño(20%, 120%);
                                     background-color: #000000;
                                     border-radius: 1vh;
 
@@ -235,29 +252,17 @@ border-radius: 8px;
                         }
                     }
                 }
-               .ver-mas{
-                @include tamaño(15%,5% );
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 1vh;
-                background-color: #000000;
-                margin-left: 45%;
-                margin-top: 20%;
 
-                a{
-                    text-decoration: none;
-                    color: #F5F5F5;
+                .ver-mas {
+                    @extend %boton:hover;
                 }
-               } 
-              
+
             }
         }
     }
-    
-  }
-  @media only screen and (max-width: 600px) {
 
-       
-    
-  }
+}
+
+@media only screen and (max-width: 600px) {
+
+}
