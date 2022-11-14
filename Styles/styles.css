@@ -28,6 +28,187 @@ body {
 }
 
 @media only screen and (min-width: 1080px) {
+  body header {
+    width: 97%;
+    height: 25vh;
+    margin-left: 2%;
+    /*@extend %between;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  body header .header__logo {
+    width: 20%;
+    height: 50%;
+    /*display: flex;*/
+    margin-left: 5%;
+    /*@extend %centrar;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body header .header__logo img {
+    padding-left: 0%;
+  }
+  body header .header__nav {
+    width: 60%;
+    height: 50%;
+    margin-right: -10%;
+  }
+  body header .header__nav nav {
+    color: #000000;
+    width: 100%;
+    height: 100%;
+  }
+  body header .header__nav nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: right;
+  }
+  body header .header__nav nav ul li {
+    display: inline;
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.5vw;
+  }
+  body header .header__nav nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+  }
+  body header .header__nav nav ul .boton {
+    width: 129px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body header .header__carrito {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body header .header__carrito img {
+    display: flex;
+    padding-left: -5%;
+    padding-top: 10%;
+  }
+  body .main__section--1 {
+    width: 98%;
+    height: 160vh;
+    margin-left: 1%;
+    position: relative; /********************************/
+  }
+  body .main__section--1 .main__section--h4 {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3vw;
+    color: #858585;
+  }
+  body .main__section--1 .main__section--h1 {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8vw;
+    color: #000000;
+  }
+  body .main__section--1 nav {
+    width: 100%;
+    height: 8vh;
+  }
+  body .main__section--1 nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__section--1 nav ul li {
+    width: 100%;
+    height: 100%;
+    margin-right: 2%;
+  }
+  body .main__section--1 nav ul li a {
+    display: flex;
+    text-decoration: none;
+  }
+  body .main__section--1 nav .main__section--botonhover {
+    width: 129px;
+    height: 32px;
+    float: left;
+    /*@extend %boton;*/
+    background-color: #000000;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 100px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__section--1 nav .main__section--botonhover:hover {
+    /*@extend %botonHover;*/
+    background-color: #000000;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 100px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    width: 129px;
+    height: 32px;
+  }
+  body .main__section--1 nav .main__section--boton {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    color: #000000;
+    border: #000000 1px solid;
+    width: 100px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 129px;
+    height: 32px;
+  }
+  body .main__section--1 .main__section--piano {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__section--1 .main__section--piano aside {
+    width: 4%;
+    height: 30%;
+    position: absolute;
+    left: 93%;
+    bottom: -8%;
+    flex-direction: column;
+  }
+  body .main__section--1 .main__section--piano aside a {
+    display: flex;
+    padding: 20%;
+  }
   body main .modelos-nuevos {
     width: 100%;
     height: 700px;
@@ -357,6 +538,141 @@ body {
   }
 }
 @media only screen and (max-width: 600px) {
+  body header {
+    width: 97%;
+    height: 15vh;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  body header .header__logo {
+    width: 20%;
+    height: 50%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body header .header__logo img {
+    padding-left: 0%;
+  }
+  body header .header__nav {
+    display: none;
+  }
+  body header .header__carrito {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body header .header__carrito img {
+    display: flex;
+    padding-left: -5%;
+    padding-top: 10%;
+  }
+  body .main__section--1 {
+    width: 98%;
+    height: 160vh;
+    margin-left: 1%;
+    position: relative; /********************************/
+  }
+  body .main__section--1 .main__section--h4 {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3vw;
+    color: #858585;
+  }
+  body .main__section--1 .main__section--h1 {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8vw;
+    color: #000000;
+  }
+  body .main__section--1 nav {
+    width: 100%;
+    height: 8vh;
+  }
+  body .main__section--1 nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__section--1 nav ul li {
+    width: 100%;
+    height: 100%;
+    margin-right: 2%;
+  }
+  body .main__section--1 nav ul li a {
+    display: flex;
+    text-decoration: none;
+  }
+  body .main__section--1 nav .main__section--botonhover {
+    width: 129px;
+    height: 32px;
+    float: left;
+    background-color: #000000;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 100px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__section--1 nav .main__section--botonhover:hover {
+    background-color: #000000;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 100px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    width: 129px;
+    height: 32px;
+  }
+  body .main__section--1 nav .main__section--boton {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    color: #000000;
+    border: #000000 1px solid;
+    width: 100px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 129px;
+    height: 32px;
+  }
+  body .main__section--1 .main__section--piano {
+    width: 100%;
+    height: 90vh;
+    /*background-color: aqua;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__section--1 .main__section--piano aside {
+    display: none;
+  }
   body main .modelos-nuevos {
     width: 100%;
     height: 120vh;
