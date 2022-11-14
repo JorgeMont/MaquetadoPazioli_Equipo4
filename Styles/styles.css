@@ -200,19 +200,213 @@ body {
     background-color: #000000;
     border-radius: 1vh;
   }
-  body main .ecomerce .ver-mas {
-    width: 15%;
+  body main .ecomerce .boton {
+    margin-top: 20%;
+    margin-left: 45%;
+  }
+  body main .ecomerce .boton a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body main .modelos-nuevos {
+    width: 100%;
+    height: 120vh;
+    background-image: url(../assets/image\ 2.png);
+    background-size: 100% 50vh;
+    background-repeat: no-repeat;
+  }
+  body main .modelos-nuevos .gradiente {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+    width: 100%;
+    height: 100%;
+  }
+  body main .modelos-nuevos .gradiente .titulo {
+    width: 100%;
     height: 5%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 1vh;
-    background-color: #000000;
-    margin-left: 45%;
-    margin-top: 20%;
   }
-  body main .ecomerce .ver-mas a {
+  body main .modelos-nuevos .gradiente .titulo h1 {
+    font-size: xx-large;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+  }
+  body main .modelos-nuevos .gradiente .container-flex {
+    color: #FFFFFF;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  body main .modelos-nuevos .gradiente .container-flex .contenedor-imagen {
+    width: 100%;
+    height: 60%;
+    margin-top: 0%;
+    background-image: url(../assets/Vector\(1\).png);
+    background-size: 100% 100%;
+    padding: 1px;
+    scale: 0.8;
+  }
+  body main .modelos-nuevos .gradiente .container-flex .contenedor-imagen .contenedor-imagen2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/Vector.png);
+    background-size: 100% 100%;
+  }
+  body main .modelos-nuevos .gradiente .container-flex .contenedor-imagen .contenedor-imagen2 .imagen-sofa {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/pixlr-bg-result\ \(6\)\ 2.png);
+    background-size: 100% 100%;
+  }
+  body main .modelos-nuevos .gradiente .container-flex .texto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  body main .modelos-nuevos .gradiente .container-flex .texto h2 {
+    width: 100%;
+    height: 2%;
+    text-align: center;
+    font-size: xx-large;
+  }
+  body main .modelos-nuevos .gradiente .container-flex .texto .valoraciones {
+    width: 100%;
+    height: 4%;
+    display: flex;
+    justify-content: center;
+  }
+  body main .modelos-nuevos .gradiente .container-flex .texto .valoraciones p {
+    font-size: x-large;
+  }
+  body main .modelos-nuevos .gradiente .container-flex .texto .valoraciones .estrellas {
+    width: 20%;
+    height: 100%;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  body main .modelos-nuevos .gradiente .container-flex .texto .p {
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    font-size: 25px;
+  }
+  body main .modelos-nuevos .gradiente .container-flex .texto .categorias {
+    width: 40%;
+    height: 2%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body main .modelos-nuevos .gradiente .container-flex .texto .boton {
+    width: 30%;
+    height: 5%;
+  }
+  body main .modelos-nuevos .ecomerce {
+    width: 100%;
+    height: 150vh;
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%);
+  }
+  body main .modelos-nuevos .ecomerce .titulo {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .modelos-nuevos .ecomerce .titulo h1 {
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+  }
+  body main .modelos-nuevos .ecomerce .row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  body main .modelos-nuevos .ecomerce .row .card {
+    margin-top: 10%;
+    width: 60%;
+    height: 40vh;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FFFFFF;
+    /* shadow-cards */
+    box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+  }
+  body main .modelos-nuevos .ecomerce .row .card .imagen {
+    width: 60%;
+    height: 25%;
+    position: absolute;
+  }
+  body main .modelos-nuevos .ecomerce .row .card .imagen img {
+    position: relative;
+    bottom: 20%;
+    left: 20%;
+  }
+  body main .modelos-nuevos .ecomerce .row .card .texto {
+    width: 100%;
+    height: 50%;
+    margin-top: 60%;
+  }
+  body main .modelos-nuevos .ecomerce .row .card .texto h2 {
+    margin-top: 2%;
+  }
+  body main .modelos-nuevos .ecomerce .row .card .texto .categorias {
+    width: 100%;
+    height: 20%;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body main .modelos-nuevos .ecomerce .row .card .texto .compra {
+    width: 100%;
+    height: 30%;
+    margin-top: 5%;
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main .modelos-nuevos .ecomerce .row .card .texto .compra a {
     text-decoration: none;
-    color: #F5F5F5;
+    padding: 2%;
+    text-align: center;
+    width: 70%;
+    height: 50%;
+    border: 1px black solid;
+    border-radius: 1vh;
+  }
+  body main .modelos-nuevos .ecomerce .row .card .texto .compra .carrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 1vh;
+  }
+  body main .modelos-nuevos .ecomerce .boton {
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  body main .modelos-nuevos .ecomerce .boton a {
+    text-decoration: none;
+    color: #FFFFFF;
   }
 }/*# sourceMappingURL=styles.css.map */
