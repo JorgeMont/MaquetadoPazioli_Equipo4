@@ -253,8 +253,14 @@ body {
                     }
                 }
 
-                .ver-mas {
-                    @extend %boton:hover;
+                .boton {
+                    margin-top: 20%;
+                    margin-left: 45%;
+
+                    a {
+                        text-decoration: none;
+                        color: $blancoPazioli;
+                    }
                 }
 
             }
@@ -264,5 +270,253 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    body {
+        main {
+            .modelos-nuevos {
+
+                @include tamaño(100%, 120vh);
+                background-image: url(../assets/image\ 2.png);
+                background-size: 100% 50vh;
+                background-repeat: no-repeat;
+
+
+                .gradiente {
+                    background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+
+                    @include tamaño(100%, 100%);
+
+                    .titulo {
+                        @include tamaño(100%, 5%);
+                        display: flex;
+                        justify-content: center;
+
+                        h1 {
+                            font-size: xx-large;
+                            text-align: center;
+                            @include tamaño(70%, 100%);
+
+                        }
+                    }
+
+                    .container-flex {
+                       
+                        color: $blancoPazioli;
+                        @include tamaño(100%, 95%);
+                        display: flex;
+                        flex-direction: column-reverse;
+
+
+                        .contenedor-imagen {
+                            @include tamaño(100%, 60%);
+                            margin-top: 0%;
+                            background-image: url(../assets/Vector\(1\).png);
+                            background-size: 100% 100%;
+                            padding: 1px;
+                            scale: .8;
+
+
+                            .contenedor-imagen2 {
+                                @include tamaño(100%, 100%);
+
+                                background-image: url(../assets/Vector.png);
+                                background-size: 100% 100%;
+
+                                .imagen-sofa {
+                                    @include tamaño(100%, 100%);
+
+                                    background-image: url(../assets/pixlr-bg-result\ \(6\)\ 2.png);
+                                    background-size: 100% 100%;
+                                }
+                            }
+
+                        }
+
+                        .texto {
+                            
+                            @include tamaño(100%, 100%);
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: center;
+
+                            h2 {
+                                @include tamaño(100%, 2%);
+                                text-align: center;
+                                font-size: xx-large
+                            }
+
+                            .valoraciones {
+                                @include tamaño(100%, 4%);
+                                display: flex;
+                                justify-content: center;
+
+                                p {
+                                    font-size: x-large;
+                                }
+
+                                .estrellas {
+                                    @include tamaño(20%, 100%);
+
+                                    margin-left: 10px;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    justify-content: space-around;
+                                }
+                            }
+
+                            .p {
+
+                                @include tamaño(80%, 20%);
+
+                              
+                                text-align: center;
+                                font-size: 25px;
+                            }
+                            .categorias{
+                                @include tamaño(40%,2% );
+                                
+                                display: flex;
+                                justify-content: space-between
+                            }
+                            .boton{
+                                @include tamaño(30%, 5%)
+                            }
+                        }
+
+
+
+                    }
+                }
+
+                .ecomerce {
+
+                    @include tamaño(100%,150vh );
+                    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #F5F5F5 51.56%, rgba(245, 245, 245, 0) 100%);
+    
+                    .titulo {
+                        @include tamaño(100%, 10%);
+    
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+    
+                        h1 {
+    
+                            @include tamaño(50%, 100%);
+                            font-size: 30px;
+                            text-align: center;
+                        }
+                    }
+    
+                    .row {
+                        @include tamaño(100%, 100%);
+                        
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        
+    
+                        .card {
+                            margin-top: 10%;
+                            @include tamaño(60%, 40vh);
+                            
+                            padding: 2%;
+    
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            background: #FFFFFF;
+    
+                            /* shadow-cards */
+                            box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+                            border-radius: 8px;
+    
+                            .imagen {
+                                @include tamaño(60%, 25%);
+    
+                                position: absolute;
+                                
+    
+                                    img {
+                                   
+                                    position: relative;
+                                    bottom: 20%;
+                                    left: 20%
+                                    
+    
+    
+    
+                                }
+                            }
+    
+                            .texto {
+                                @include tamaño(100%, 50%);
+                                margin-top: 60%;
+    
+                                h2 {
+                                    margin-top: 2%;
+                                }
+    
+                                .categorias {
+                                    @include tamaño(100%, 20%);
+                                    margin-top: 2%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+    
+                                .compra {
+                                    @include tamaño(100%, 30%);
+                                    margin-top: 5%;
+                                    display: flex;
+                                    padding: 2%;
+                                    justify-content: space-between;
+                                    align-items: center;
+    
+    
+    
+    
+                                    a {
+    
+                                        text-decoration: none;
+                                        padding: 2%;
+                                        text-align: center;
+    
+                                        @include tamaño(70%, 50%);
+                                        border: 1px black solid;
+                                        border-radius: 1vh;
+                                    }
+    
+                                    .carrito {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        @include tamaño(20%, 100%);
+                                        background-color: #000000;
+                                        border-radius: 1vh;
+    
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .boton {
+                        
+                        margin-left: 45%;
+                        margin-top: 5%;
+    
+                        a {
+                            text-decoration: none;
+                            color: $blancoPazioli;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
 
 }
