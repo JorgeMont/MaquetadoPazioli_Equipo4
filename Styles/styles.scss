@@ -229,6 +229,7 @@ body {
               }
             }
           }
+        }
 
         main {
             .modelos-nuevos {
@@ -295,6 +296,7 @@ body {
 
                         .contenedor-imagen {
                             @include tamaño(50%, 100%);
+                            
                             margin-top: 5%;
                             margin-left: 5%;
 
@@ -354,6 +356,7 @@ body {
                     justify-content: space-around;
 
                     .card {
+                      
                         margin-top: 10%;
                         @include tamaño(20%, 100%);
                         padding: 2%;
@@ -368,16 +371,14 @@ body {
                         border-radius: 8px;
 
                         .imagen {
-                            @include tamaño(20%, 70%);
-
-                            position: absolute;
-
+                            @include tamaño(20%, 20%);
+                            
+                            margin-bottom: 17%;
+                            margin-right: 10%;
                             img {
-                                position: relative;
-                                left: 5%;
-
-
-
+                              @include tamaño(100%,100% );
+                             
+                                
                             }
                         }
 
@@ -677,9 +678,10 @@ body {
             }
         }
     }
+  
 
 
-}
+
 
 @media only screen and (max-width: 600px) {
     body {
@@ -819,6 +821,7 @@ body {
               }
             }
           }
+        }
         main {
             .modelos-nuevos {
 
@@ -1213,7 +1216,7 @@ body {
         }
     }
 
-}//Variables
+//Variables
 $negroPazioli: #000000;
 $blancoPazioli: #FFFFFF;
 $amarilloPazioli: #FFBA60;
