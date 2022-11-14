@@ -1,44 +1,295 @@
 //Variables
 $negroPazioli: #000000;
-$blancoPazioli: #FFFFFF;
-$amarilloPazioli: #FFBA60;
-$negroHover: rgba(0,0,0,0.7);
+$blancoPazioli: #ffffff;
+$amarilloPazioli: #ffba60;
+$negroHover: rgba(0, 0, 0, 0.7);
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Permanent+Marker&display=swap");
 
 //Extend
-%boton{
-    background-color: $negroPazioli;
-    border-radius: 8px;
-    color: $blancoPazioli;
-    width: 100px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+%boton {
+  background-color: $negroPazioli;
+  border-radius: 8px;
+  color: $blancoPazioli;
+  width: 100px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-%botonHover{
-    @extend %boton;
-    background-color: $negroHover;
+%botonHover {
+  @extend %boton;
+  background-color: $negroHover;
+}
+/******************************LUIS ENRIQUE*******************************/
+%between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
+%centrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-body{
-    font-family: 'Raleway';
+%around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.boton{
-    @extend %boton;
+/* -------aquivan los MIXIN---------*/
+@mixin tam($ancho, $alto) {
+  width: $ancho;
+  height: $alto;
+}
 
-    &:hover{
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway";
+}
+
+.boton {
+  @extend %boton;
+
+  &:hover {
+    @extend %botonHover;
+    cursor: pointer;
+  }
+}
+header {
+  @include tam(97%, 25vh);
+  margin-left: 2%;
+  @extend %between;
+  position: relative;
+
+  .header__logo {
+    @include tam(20%, 50%);
+    /*display: flex;*/
+    margin-left: 5%;
+    @extend %centrar;
+    img {
+      padding-left: 0%;
+    }
+  }
+  .header__nav {
+    @include tam(60%, 50%);
+    margin-right: -10%;
+    nav {
+      color: $negroPazioli;
+      @include tam(100%, 100%);
+
+      ul {
+        @include tam(100%, 100%);
+        @extend %centrar;
+        justify-content: right;
+        li {
+          display: inline;
+          list-style: none;
+          font-weight: 600;
+          font-size: 1.5vw;
+          a {
+            text-decoration: none;
+            color: #000000;
+            padding: 10px;
+          }
+        }
+        .boton {
+          @include tam(129px, 32px);
+          @extend %centrar;
+        }
+      }
+    }
+  }
+  .header__carrito {
+    @include tam(10%, 100%);
+    @extend %centrar;
+    img {
+      display: flex;
+      padding-left: -5%;
+      padding-top: 10%;
+    }
+  }
+}
+
+.main__section--1 {
+  @include tam(98%, 160vh);
+  margin-left: 1%;
+  position: relative; /********************************/
+  .main__section--h4 {
+    @include tam(100%, 15vh);
+    @extend %centrar;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3vw;
+    color: #858585;
+  }
+  .main__section--h1 {
+    @include tam(100%, 20vh);
+    @extend %centrar;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8vw;
+    color: #000000;
+  }
+  nav {
+    @include tam(100%, 8vh);
+    ul {
+      @include tam(100%, 100%);
+      @extend %centrar;
+      li {
+        @include tam(100%, 100%);
+        margin-right: 2%;
+        a {
+          display: flex;
+          text-decoration: none;
+        }
+      }
+    }
+    .main__section--botonhover {
+      @include tam(129px, 32px);
+      float: left;
+      @extend %boton;
+      &:hover {
         @extend %botonHover;
         cursor: pointer;
+        @include tam(129px, 32px);
+      }
     }
+    .main__section--boton {
+      background-color: $blancoPazioli;
+      border-radius: 8px;
+      color: $negroPazioli;
+      border: #000000 1px solid;
+      width: 100px;
+      height: 24px;
+      @extend %centrar;
+      @include tam(129px, 32px);
+    }
+  }
+  .main__section--piano {
+    @include tam(100%, 90%);
+    @extend %centrar;
+    aside {
+      @include tam(4%, 30%);
+      position: absolute;
+      left: 93%;
+      bottom: -8%;
+      flex-direction: column;
+      a {
+        display: flex;
+        padding: 20%;
+      }
+    }
+  }
+}
+
+/******************************************************/
+/* RESPONSIVO PARA CELULARES*/
+/*****************************************************/
+@media only screen and (max-width: 600px) {
+  header {
+    @include tam(97%, 15vh);
+    margin-left: 2%;
+    @extend %between;
+    position: relative;
+
+    .header__logo {
+      @include tam(20%, 50%);
+      margin-left: 5%;
+      @extend %centrar;
+      img {  
+        padding-left: 0%;
+      }
+    }
+    .header__nav {
+      display: none;
+    }
+
+    .header__carrito {
+      @include tam(10%, 100%);
+      @extend %centrar;
+      img {
+        display: flex;
+        padding-left: -5%;
+        padding-top: 10%;
+      }
+    }
+  }
+
+  .main__section--1 {
+    @include tam(98%, 160vh);
+    margin-left: 1%;
+    position: relative; /********************************/
+    .main__section--h4 {
+      @include tam(100%, 15vh);
+      @extend %centrar;
+      
+      font-style: normal;
+      font-weight: 500;
+      font-size: 3vw;
+      color: #858585;
+    }
+    .main__section--h1 {
+      @include tam(100%, 15vh);
+      @extend %centrar;
+      font-family: Abril Fatface;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8vw;
+      color: #000000;
+    }
+    nav {
+      @include tam(100%, 8vh);
+      ul {
+        @include tam(100%, 100%);
+        @extend %centrar;
+        li {
+          @include tam(100%, 100%);
+          margin-right: 2%;
+          a {
+            display: flex;
+            text-decoration: none;
+          }
+        }
+      }
+      .main__section--botonhover {
+        @include tam(129px, 32px);
+        float: left;
+        @extend %boton;
+        &:hover {
+          @extend %botonHover;
+          cursor: pointer;
+          @include tam(129px, 32px);
+        }
+      }
+      .main__section--boton {
+        background-color: $blancoPazioli;
+        border-radius: 8px;
+        color: $negroPazioli;
+        border: #000000 1px solid;
+        width: 100px;
+        height: 24px;
+        @extend %centrar;
+        @include tam(129px, 32px);
+      }
+    }
+    .main__section--piano {
+      @include tam(100%, 90vh);
+      /*background-color: aqua;*/
+      @extend %centrar;
+      aside {
+        display: none;
+      }
+    }
+  }
 }
