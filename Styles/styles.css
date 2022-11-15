@@ -572,13 +572,13 @@ body main .main__partners .tercera {
     padding-left: -5%;
     padding-top: 10%;
   }
-  body .main__section--1 {
+  body main .main__section--1 {
     width: 98%;
     height: 160vh;
     margin-left: 1%;
     position: relative; /********************************/
   }
-  body .main__section--1 .main__section--h4 {
+  body main .main__section--1 .main__section--h4 {
     width: 100%;
     height: 15vh;
     display: flex;
@@ -589,7 +589,7 @@ body main .main__partners .tercera {
     font-size: 3vw;
     color: #858585;
   }
-  body .main__section--1 .main__section--h1 {
+  body main .main__section--1 .main__section--h1 {
     width: 100%;
     height: 15vh;
     display: flex;
@@ -601,27 +601,27 @@ body main .main__partners .tercera {
     font-size: 8vw;
     color: #000000;
   }
-  body .main__section--1 nav {
+  body main .main__section--1 nav {
     width: 100%;
     height: 8vh;
   }
-  body .main__section--1 nav ul {
+  body main .main__section--1 nav ul {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  body .main__section--1 nav ul li {
+  body main .main__section--1 nav ul li {
     width: 100%;
     height: 100%;
     margin-right: 2%;
   }
-  body .main__section--1 nav ul li a {
+  body main .main__section--1 nav ul li a {
     display: flex;
     text-decoration: none;
   }
-  body .main__section--1 nav .main__section--botonhover {
+  body main .main__section--1 nav .main__section--botonhover {
     width: 129px;
     height: 32px;
     float: left;
@@ -632,7 +632,7 @@ body main .main__partners .tercera {
     align-items: center;
     justify-content: center;
   }
-  body .main__section--1 nav .main__section--botonhover:hover {
+  body main .main__section--1 nav .main__section--botonhover:hover {
     background-color: #000000;
     border-radius: 8px;
     color: #ffffff;
@@ -646,7 +646,7 @@ body main .main__partners .tercera {
     width: 129px;
     height: 32px;
   }
-  body .main__section--1 nav .main__section--boton {
+  body main .main__section--1 nav .main__section--boton {
     background-color: #ffffff;
     border-radius: 8px;
     color: #000000;
@@ -657,7 +657,7 @@ body main .main__partners .tercera {
     width: 129px;
     height: 32px;
   }
-  body .main__section--1 .main__section--piano {
+  body main .main__section--1 .main__section--piano {
     width: 100%;
     height: 90vh;
     /*background-color: aqua;*/
@@ -665,7 +665,7 @@ body main .main__partners .tercera {
     align-items: center;
     justify-content: center;
   }
-  body .main__section--1 .main__section--piano aside {
+  body main .main__section--1 .main__section--piano aside {
     display: none;
   }
   body main .modelos-nuevos {
@@ -767,31 +767,31 @@ body main .main__partners .tercera {
     width: 30%;
     height: 5%;
   }
-  body main .modelos-nuevos .ecomerce {
+  body main .ecomerce {
     width: 100%;
-    height: 150vh;
+    height: 220vh;
     background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, #f5f5f5 51.56%, rgba(245, 245, 245, 0) 100%);
   }
-  body main .modelos-nuevos .ecomerce .titulo {
+  body main .ecomerce .titulo {
     width: 100%;
     height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  body main .modelos-nuevos .ecomerce .titulo h1 {
+  body main .ecomerce .titulo h1 {
     width: 50%;
     height: 100%;
     font-size: 30px;
     text-align: center;
   }
-  body main .modelos-nuevos .ecomerce .row {
+  body main .ecomerce .row {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
-  body main .modelos-nuevos .ecomerce .row .card {
+  body main .ecomerce .row .card {
     margin-top: 10%;
     width: 60%;
     height: 55vh;
@@ -804,25 +804,25 @@ body main .main__partners .tercera {
     box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
     border-radius: 8px;
   }
-  body main .modelos-nuevos .ecomerce .row .card .imagen {
+  body main .ecomerce .row .card .imagen {
     width: 60%;
     height: 25%;
     position: absolute;
   }
-  body main .modelos-nuevos .ecomerce .row .card .imagen img {
+  body main .ecomerce .row .card .imagen img {
     position: relative;
     bottom: 45%;
     left: 20%;
   }
-  body main .modelos-nuevos .ecomerce .row .card .texto {
+  body main .ecomerce .row .card .texto {
     width: 100%;
     height: 50%;
     margin-top: 60%;
   }
-  body main .modelos-nuevos .ecomerce .row .card .texto h2 {
+  body main .ecomerce .row .card .texto h2 {
     margin-top: 2%;
   }
-  body main .modelos-nuevos .ecomerce .row .card .texto .categorias {
+  body main .ecomerce .row .card .texto .categorias {
     width: 100%;
     height: 20%;
     margin-top: 2%;
@@ -830,7 +830,7 @@ body main .main__partners .tercera {
     align-items: center;
     justify-content: space-between;
   }
-  body main .modelos-nuevos .ecomerce .row .card .texto .compra {
+  body main .ecomerce .row .card .texto .compra {
     width: 100%;
     height: 30%;
     margin-top: 5%;
@@ -839,7 +839,7 @@ body main .main__partners .tercera {
     justify-content: space-between;
     align-items: center;
   }
-  body main .modelos-nuevos .ecomerce .row .card .texto .compra a {
+  body main .ecomerce .row .card .texto .compra a {
     text-decoration: none;
     padding: 2%;
     text-align: center;
@@ -848,22 +848,26 @@ body main .main__partners .tercera {
     border: 1px black solid;
     border-radius: 1vh;
   }
-  body main .modelos-nuevos .ecomerce .row .card .texto .compra .carrito {
+  body main .ecomerce .row .card .texto .compra .carrito {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 20%;
-    height: 100%;
+    height: 80%;
     background-color: #000000;
     border-radius: 1vh;
   }
-  body main .modelos-nuevos .ecomerce .boton {
-    margin-left: 45%;
+  body main .ecomerce .boton {
+    margin: 0 auto;
     margin-top: 5%;
+    width: 200px;
   }
-  body main .modelos-nuevos .ecomerce .boton a {
+  body main .ecomerce .boton a {
     text-decoration: none;
     color: #ffffff;
+    background-color: #000000;
+    padding: 0.4rem 3rem;
+    border-radius: 8px;
   }
   body main .main__contactanos {
     width: 100%;

@@ -644,7 +644,8 @@ body {
       }
     }
 
-    .main__section--1 {
+    main {
+      .main__section--1 {
       @include tam(98%, 160vh);
       margin-left: 1%;
       position: relative; /********************************/
@@ -741,8 +742,8 @@ body {
           display: none;
         }
       }
-    }
-    main {
+      }
+    
       .modelos-nuevos {
         @include tamaño(100%, 120vh);
         background-image: url(../assets/image\ 2.png);
@@ -850,124 +851,129 @@ body {
               }
             }
           }
+        }  
+      }
+
+      .ecomerce {
+        @include tamaño(100%, 220vh);
+        background: linear-gradient(
+          180deg,
+          rgba(245, 245, 245, 0) 0%,
+          #f5f5f5 51.56%,
+          rgba(245, 245, 245, 0) 100%
+        );
+
+        .titulo {
+          @include tamaño(100%, 10%);
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          h1 {
+            @include tamaño(50%, 100%);
+            font-size: 30px;
+            text-align: center;
+          }
         }
 
-        .ecomerce {
-          @include tamaño(100%, 150vh);
-          background: linear-gradient(
-            180deg,
-            rgba(245, 245, 245, 0) 0%,
-            #f5f5f5 51.56%,
-            rgba(245, 245, 245, 0) 100%
-          );
+        .row {
+          // @include tamaño(100%, 100%);c
 
-          .titulo {
-            @include tamaño(100%, 10%);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+          .card {
+            margin-top: 10%;
+            @include tamaño(60%, 55vh);
 
-            h1 {
-              @include tamaño(50%, 100%);
-              font-size: 30px;
-              text-align: center;
-            }
-          }
-
-          .row {
-            // @include tamaño(100%, 100%);c
+            padding: 2%;
 
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
+            justify-content: center;
+            background: #ffffff;
 
-            .card {
-              margin-top: 10%;
-              @include tamaño(60%, 55vh);
+            /* shadow-cards */
+            box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+            border-radius: 8px;
 
-              padding: 2%;
+            .imagen {
+              @include tamaño(60%, 25%);
 
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              background: #ffffff;
+              position: absolute;
 
-              /* shadow-cards */
-              box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
-              border-radius: 8px;
-
-              .imagen {
-                @include tamaño(60%, 25%);
-
-                position: absolute;
-
-                img {
-                  position: relative;
-                  bottom: 45%;
-                  left: 20%;
-                }
-              }
-
-              .texto {
-                @include tamaño(100%, 50%);
-                margin-top: 60%;
-
-                h2 {
-                  margin-top: 2%;
-                }
-
-                .categorias {
-                  @include tamaño(100%, 20%);
-                  margin-top: 2%;
-                  display: flex;
-                  align-items: center;
-                  justify-content: space-between;
-                }
-
-                .compra {
-                  @include tamaño(100%, 30%);
-                  margin-top: 5%;
-                  display: flex;
-                  padding: 2%;
-                  justify-content: space-between;
-                  align-items: center;
-
-                  a {
-                    text-decoration: none;
-                    padding: 2%;
-                    text-align: center;
-
-                    @include tamaño(70%, 50%);
-                    border: 1px black solid;
-                    border-radius: 1vh;
-                  }
-
-                  .carrito {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    @include tamaño(20%, 100%);
-                    background-color: #000000;
-                    border-radius: 1vh;
-                  }
-                }
+              img {
+                position: relative;
+                bottom: 45%;
+                left: 20%;
               }
             }
-          }
 
-          .boton {
-            margin-left: 45%;
-            margin-top: 5%;
+            .texto {
+              @include tamaño(100%, 50%);
+              margin-top: 60%;
 
-            a {
-              text-decoration: none;
-              color: $blancoPazioli;
+              h2 {
+                margin-top: 2%;
+              }
+
+              .categorias {
+                @include tamaño(100%, 20%);
+                margin-top: 2%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              }
+
+              .compra {
+                @include tamaño(100%, 30%);
+                margin-top: 5%;
+                display: flex;
+                padding: 2%;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                  text-decoration: none;
+                  padding: 2%;
+                  text-align: center;
+
+                  @include tamaño(70%, 50%);
+                  border: 1px black solid;
+                  border-radius: 1vh;
+                }
+
+                .carrito {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  @include tamaño(20%, 80%);
+                  background-color: #000000;
+                  border-radius: 1vh;
+                }
+              }
             }
           }
         }
+
+        .boton {
+          margin: 0 auto;
+          margin-top: 5%;
+          width: 200px;
+
+          a {
+            text-decoration: none;
+            color: $blancoPazioli;
+            background-color: $negroPazioli;
+            padding: 0.4rem 3rem;
+            border-radius: 8px;
+          }
+        }
       }
+
 
       .main__contactanos {
         width: 100%;
