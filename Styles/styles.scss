@@ -94,7 +94,7 @@ body {
                     display: inline;
                     list-style: none;
                     font-weight: 600;
-                    font-size: 1.5vw;
+                    font-size: 1.2rem;
                     a {
                       text-decoration: none;
                       color: #000000;
@@ -172,28 +172,22 @@ body {
               .main__section--botonhover {
                 @include tam(129px, 32px);
                 float: left;
-                /*@extend %boton;*/
                 background-color: $negroPazioli;
                 border-radius: 8px;
                 color: $blancoPazioli;
-                width: 100px;
-                height: 24px;
+                @include tam(129px, 32px);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 &:hover {
-                  /*@extend %botonHover;*/
                   background-color: $negroPazioli;
                     border-radius: 8px;
                     color: $blancoPazioli;
-                    width: 100px;
-                    height: 24px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     background-color: $negroHover;
                   cursor: pointer;
-                  @include tam(129px, 32px);
                 }
               }
               .main__section--boton {
@@ -444,163 +438,162 @@ body {
                 }
 
             }
-        }
-    }
 
-    .main__contactanos{
-        width: 100%;
-        padding: 5rem 0;
-        background-image: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(222,222,222,0.5634628851540616) 83%, rgba(92,92,92,0.7903536414565826) 93%), url(../img/darius-soodmand-F8E2tks5N04-unsplash\ 1.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        overflow: hidden;
-    }
-    .contenedor__main__contactanos{
-        margin-top: 2rem;
-    }
-    .main__contactanos--texto{
-        margin: 1rem 0;
-        h2{
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2.7rem;
-        }
-        p{
-            text-align: center;
-            width: $widthForm;
-            margin: 0 auto;
-        }
-    }
-
-    .main__contactanos--formulario{
-        width: $widthForm;
-        margin: 1rem auto;
-        h4{
-            margin: 2rem 0;
-            text-align: left;
-        }
-        .campo{
-            margin: 1rem 0;
-            width: 100%;
-            background-color: $negroHover;
-            height: 3.2rem;
-            border-radius: 4px;
-        }
-        .agrupa{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .telefono,.email{
-                width: 47%;
-            }
-        }
-
-        .cuentanos{
-            width: 100%;
-            margin: 1rem 0;  
-            height: 12rem;
-        }
-
-        .btn-enviar{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 3rem 0;
-            background-color: $negroPazioli;
-            border-radius: 8px;
-            color: $blancoPazioli;
-            a{
+            .main__contactanos{
                 width: 100%;
-                height: 2.1rem;
-                text-decoration: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-decoration: none;
-                color: $blancoPazioli;
+                padding: 5rem 0;
+                background-image: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(222,222,222,0.5634628851540616) 83%, rgba(92,92,92,0.7903536414565826) 93%), url(../img/darius-soodmand-F8E2tks5N04-unsplash\ 1.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                overflow: hidden;
             }
-        }
+            .contenedor__main__contactanos{
+                margin-top: 2rem;
+            }
+            .main__contactanos--texto{
+                margin: 1rem 0;
+                h2{
+                    text-align: center;
+                    margin-bottom: 2rem;
+                    font-size: 2.7rem;
+                }
+                p{
+                    text-align: center;
+                    width: $widthForm;
+                    margin: 0 auto;
+                }
+            }
         
+            .main__contactanos--formulario{
+                width: $widthForm;
+                margin: 1rem auto;
+                h4{
+                    margin: 2rem 0;
+                    text-align: left;
+                }
+                .campo{
+                    margin: 1rem 0;
+                    width: 100%;
+                    background-color: $negroHover;
+                    height: 3.2rem;
+                    border-radius: 4px;
+                }
+                .agrupa{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .telefono,.email{
+                        width: 47%;
+                    }
+                }
+        
+                .cuentanos{
+                    width: 100%;
+                    margin: 1rem 0;  
+                    height: 12rem;
+                }
+        
+                .btn-enviar{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 3rem 0;
+                    background-color: $negroPazioli;
+                    border-radius: 8px;
+                    color: $blancoPazioli;
+                    a{
+                        width: 100%;
+                        height: 2.1rem;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        color: $blancoPazioli;
+                    }
+                }
+                
+            }
+        
+        
+            .main__partners{
+                width: 100%;
+                padding: 12rem 0;
+                background:linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(222,222,222,0.5634628851540616) 17%, rgba(80,80,80,1) 90%);
+                h2{
+                    text-align: center;
+                    margin-bottom: 2rem;
+                    font-size: 2.7rem;
+                }
+                .partners{
+                    width: 80%;
+                    margin: 3rem auto;
+                }
+                .primera,.tercera{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+                .segunda{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                .partner{
+                    background-color: $negroPazioli;
+                    color: $blancoPazioli;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width: 12rem;
+                    height: 4rem;
+                    margin: 1rem 0;
+                    border-radius: 50px;
+                    .logo{
+                        width: 32%;
+                        background-color: #6e6e6e;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                        height: 83%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 0.2rem;
+                        img{
+                            display: block;
+                            width: 2rem;
+                            height: 2rem;
+                        }
+                    }
+                    .logo__segunda{
+                        width: 32%;
+                        background-color: #6e6e6e;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                        height: 83%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 0.2rem;
+                        img{
+                            display: block;
+                            width: 2rem;
+                            height: 2rem;
+                        }
+                    }
+                    .partner--texto{
+                        width: 70%;
+                        text-align: center;
+                        margin-left: 1rem;
+                        h3{
+                            font-weight: 100;
+                        }
+                    }
+                }
+            }
+        }
     }
-
-
-    .main__partners{
-        width: 100%;
-        padding: 12rem 0;
-        background:linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(222,222,222,0.5634628851540616) 17%, rgba(80,80,80,1) 90%);
-        h2{
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2.7rem;
-        }
-        .partners{
-            width: 80%;
-            margin: 3rem auto;
-        }
-        .primera,.tercera{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        .segunda{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        .partner{
-            background-color: $negroPazioli;
-            color: $blancoPazioli;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 12rem;
-            height: 4rem;
-            margin: 1rem 0;
-            border-radius: 50px;
-            .logo{
-                width: 32%;
-                background-color: #6e6e6e;
-                border: 1px solid #fff;
-                border-radius: 50%;
-                height: 83%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: 0.2rem;
-                img{
-                    display: block;
-                    width: 2rem;
-                    height: 2rem;
-                }
-            }
-            .logo__segunda{
-                width: 32%;
-                background-color: #6e6e6e;
-                border: 1px solid #fff;
-                border-radius: 50%;
-                height: 83%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: 0.2rem;
-                img{
-                    display: block;
-                    width: 2rem;
-                    height: 2rem;
-                }
-            }
-            .partner--texto{
-                width: 70%;
-                text-align: center;
-                margin-left: 1rem;
-                h3{
-                    font-weight: 100;
-                }
-            }
-        }
-    }
-
 
 }
 
@@ -695,8 +688,8 @@ body {
                 background-color: $negroPazioli;
                 border-radius: 8px;
                 color: $blancoPazioli;
-                width: 100px;
-                height: 24px;
+                // width: 100px;
+                // height: 24px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -721,8 +714,8 @@ body {
                 border-radius: 8px;
                 color: $negroPazioli;
                 border: #000000 1px solid;
-                width: 100px;
-                height: 24px;
+                // width: 100px;
+                // height: 24px;
                 //@extend %centrar;
                 display: flex;
                 align-items: center;
@@ -837,7 +830,7 @@ body {
 
                             .p {
 
-                                @include tamaño(80%, 20%);
+                                @include tamaño(80%, 40%);
 
                               
                                 text-align: center;
@@ -881,7 +874,7 @@ body {
                     }
     
                     .row {
-                        @include tamaño(100%, 100%);
+                        // @include tamaño(100%, 100%);c
                         
                         display: flex;
                         flex-direction: column;
@@ -891,7 +884,7 @@ body {
     
                         .card {
                             margin-top: 10%;
-                            @include tamaño(60%, 40vh);
+                            @include tamaño(60%, 55vh);
                             
                             padding: 2%;
     
@@ -913,7 +906,7 @@ body {
                                     img {
                                    
                                     position: relative;
-                                    bottom: 20%;
+                                    bottom: 45%;
                                     left: 20%
                                     
     
@@ -990,14 +983,67 @@ body {
         }
     }
 
+    // .main__contactanos--texto{
+    //     p{
+    //         width: 90%;
+    //     }
+    // }
+
+    // .main__contactanos--formulario{
+    //     width: 90%;
+    //     .campo{
+    //         margin: 1rem 0;
+    //         width: 100%;
+    //         background-color: $negroHover;
+    //         height: 3.2rem;
+    //         border-radius: 4px;
+    //     }
+    //     .agrupa{
+    //         display: block;
+    //         .telefono,.email{
+    //             width: 100%;
+    //         }
+    //     }
+    //     .cuentanos{
+    //         width: 100%;
+    //         margin: 1rem 0;  
+    //         height: 12rem;
+    //     }
+        
+    // }
+
+    .main__contactanos{
+        width: 100%;
+        padding: 5rem 0;
+        background-image: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(222,222,222,0.5634628851540616) 83%, rgba(92,92,92,0.7903536414565826) 93%), url(../img/darius-soodmand-F8E2tks5N04-unsplash\ 1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .contenedor__main__contactanos{
+        margin-top: 2rem;
+    }
     .main__contactanos--texto{
+        margin: 1rem 0;
+        h2{
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.7rem;
+        }
         p{
-            width: 90%;
+            text-align: center;
+            width: $widthForm;
+            margin: 0 auto;
         }
     }
 
     .main__contactanos--formulario{
-        width: 90%;
+        width: 93%;
+        padding: 1rem;
+        h4{
+            margin: 2rem 0;
+            text-align: left;
+        }
         .campo{
             margin: 1rem 0;
             width: 100%;
@@ -1006,15 +1052,41 @@ body {
             border-radius: 4px;
         }
         .agrupa{
-            display: block;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-between;
+            // align-items: center;
+            width: 100%;
             .telefono,.email{
                 width: 100%;
             }
         }
+
         .cuentanos{
             width: 100%;
             margin: 1rem 0;  
             height: 12rem;
+        }
+
+        .btn-enviar{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3rem 0;
+            background-color: $negroPazioli;
+            border-radius: 8px;
+            color: $blancoPazioli;
+            a{
+                width: 100%;
+                height: 2.1rem;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: $blancoPazioli;
+            }
         }
         
     }
