@@ -600,6 +600,83 @@ body {
         }
       }
     }
+
+    footer {
+      background: linear-gradient(
+        177.96deg,
+        rgba(255, 255, 255, 0.43) 1.72%,
+        #6f6f6f 107.44%
+      );
+      display: flex;
+      flex-wrap: wrap;
+      padding: 100px 100px 0 200px;
+      height: 444px;
+      font-size: 12px;
+    
+      .footer__logoPazioli {
+        width: 30%;
+    
+        img {
+          width: 150px;
+        }
+      }
+    
+      .footer__nosotros {
+        width: 30%;
+        padding-left: 50px;
+    
+        h2 {
+          font-size: 14px;
+          margin-bottom: 16px;
+        }
+    
+        ul {
+          list-style: none;
+    
+          li {
+            margin-bottom: 8px;
+          }
+        }
+      }
+    
+      .footer__contactanos {
+        width: 30%;
+        padding-left: 50px;
+        h2 {
+          font-size: 14px;
+          margin-bottom: 16px;
+        }
+        p {
+          width: 50%;
+        }
+      }
+    
+      .footer__redes {
+        width: 30%;
+        img {
+          width: 40px;
+          margin-right: 22px;
+        }
+      }
+    
+      .footer__copyright {
+        width: 70%;
+      }
+    
+      .footer__credits {
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    
+        span {
+          color: rgb(160, 28, 28);
+        }
+    
+        .autor {
+          font-weight: 800;
+        }
+      }
+    }
   }
 }
 
@@ -1147,6 +1224,87 @@ body {
 
         .ocultar {
           display: none;
+        }
+      }
+    }
+
+    footer {
+      background: linear-gradient(
+        177.96deg,
+        rgba(255, 255, 255, 0.43) 1.72%,
+        #6f6f6f 107.44%
+      );
+      padding: 56px 50px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      height: 803px;
+      font-size: 12px;
+  
+      h2{
+        margin-bottom: 0.5rem;
+      }
+
+      .footer__logoPazioli {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        order: -1;
+  
+        img {
+          margin: 50px 0;
+          width: 200px;
+        }
+      }
+  
+      .footer__nosotros {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 20px;
+
+        ul{
+          list-style: none;
+        }
+      }
+  
+      .footer__contactanos {
+        text-align: center;
+        margin-bottom: 20px;
+  
+        p {
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+  
+      .footer__redes {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        order: -1;
+
+        img{
+          width: 40px;
+          margin: 0 1rem;
+        }
+      }
+  
+      .footer__copyright {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .footer__credits{
+        span{
+          color: red;
+          font-size: 15px;
+        }
+
+        .autor{
+          font-weight: 800;
+          text-align: center;
         }
       }
     }

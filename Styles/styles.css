@@ -534,6 +534,66 @@ body main .main__partners .tercera {
   body main .main__partners .partner .partner--texto h3 {
     font-weight: 100;
   }
+  body footer {
+    background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6f6f6f 107.44%);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 100px 0 200px;
+    height: 444px;
+    font-size: 12px;
+  }
+  body footer .footer__logoPazioli {
+    width: 30%;
+  }
+  body footer .footer__logoPazioli img {
+    width: 150px;
+  }
+  body footer .footer__nosotros {
+    width: 30%;
+    padding-left: 50px;
+  }
+  body footer .footer__nosotros h2 {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  body footer .footer__nosotros ul {
+    list-style: none;
+  }
+  body footer .footer__nosotros ul li {
+    margin-bottom: 8px;
+  }
+  body footer .footer__contactanos {
+    width: 30%;
+    padding-left: 50px;
+  }
+  body footer .footer__contactanos h2 {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  body footer .footer__contactanos p {
+    width: 50%;
+  }
+  body footer .footer__redes {
+    width: 30%;
+  }
+  body footer .footer__redes img {
+    width: 40px;
+    margin-right: 22px;
+  }
+  body footer .footer__copyright {
+    width: 70%;
+  }
+  body footer .footer__credits {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+  body footer .footer__credits span {
+    color: rgb(160, 28, 28);
+  }
+  body footer .footer__credits .autor {
+    font-weight: 800;
+  }
 }
 @media only screen and (max-width: 600px) {
   body header {
@@ -1017,5 +1077,67 @@ body main .main__partners .tercera {
   }
   body main .main__partners .ocultar {
     display: none;
+  }
+  body footer {
+    background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6f6f6f 107.44%);
+    padding: 56px 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    height: 803px;
+    font-size: 12px;
+  }
+  body footer h2 {
+    margin-bottom: 0.5rem;
+  }
+  body footer .footer__logoPazioli {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    order: -1;
+  }
+  body footer .footer__logoPazioli img {
+    margin: 50px 0;
+    width: 200px;
+  }
+  body footer .footer__nosotros {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  body footer .footer__nosotros ul {
+    list-style: none;
+  }
+  body footer .footer__contactanos {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  body footer .footer__contactanos p {
+    width: 60%;
+    margin: 0 auto;
+  }
+  body footer .footer__redes {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    order: -1;
+  }
+  body footer .footer__redes img {
+    width: 40px;
+    margin: 0 1rem;
+  }
+  body footer .footer__copyright {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  body footer .footer__credits span {
+    color: red;
+    font-size: 15px;
+  }
+  body footer .footer__credits .autor {
+    font-weight: 800;
+    text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */
